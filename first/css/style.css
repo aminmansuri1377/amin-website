@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family:  'Oleo Script Swash Caps', 'cursive';
+    color: darkgray;
+    line-height: 2;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+h1, h2{
+    font-weight: 400;
+    margin: 10px 0px;
+}
+p {
+    margin: 10px 0px;
+}
+
+img {
+    width: 100%;
+}
+/*navbar*/
+.navbar{
+    background-color:black;
+    height: 100px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a {
+    padding: 12px;
+    margin: 0 50px;
+}
+
+.navbar a:hover {
+    border-bottom: 1px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/*showcase*/
+.showcase-text {
+    animation: slideinfromleft 1s ease-in;
+}
+
+.showcase {
+    height: 400px;
+    background-color: green;
+    color: #fff;
+    padding: 20px 50px;
+}
+.showcase2 {
+    height: 450px;
+    background-color: Navy;
+    color: #fff;
+    padding: 20px 50px;
+}
+.showcase h1 {
+    font-size: 40px;
+}
+.showcase2 h1 {
+    font-size: 40px;
+}
+.showcase-form {
+    position: relative;
+    top: 50px;
+    height: 250px;
+    width: 250px;
+    animation: slideinfromtop 2s ease-in;
+}
+
+/*stats*/
+.stats {
+    padding-top: 50px;
+    color: black;
+    
+}
+
+
+/*utility*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+
+}
+
+.card {
+    background-color: darkgreen ;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.card2 {
+    background-color: blue ;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0,0.2);
+
+}
+.btn2 {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0,0.2);
+
+}
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap: 35px;
+    height: 100%;
+}
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+    grid-template-columns: 1fr;
+   
+}
+
+/*margin*/
+.my-1 {
+    margin: 1rem 0;
+}
+.my-2 {
+    margin: 1.5rem 0;
+}
+.my-3 {
+    margin: 2rem o;
+}
+.my-4 {
+    margin: 3rem o;
+}
+.my-5 {
+    margin: 4rem o;
+}
+
+
+img {
+    width: 250px;
+
+}
+/*footer*/
+.footer {
+    background-color: darkgrey;
+    color: black;
+    padding: 5px;
+    
+    
+}
+
+.footer .sections a {
+    color: black;
+}
+
+.footer .social a {
+    color: black;
+    margin: 0 5px;
+    padding: 20px 0;
+}
+/*head*/
+.courses-head {
+
+     height: 400px;
+    background-image: url(../pics/22.jpg);
+    color: #fff;
+    padding: 20px 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*sample*/
+.sample .flex {
+    flex-wrap: wrap;
+}
+.sample .card3 {
+    margin: 18px 10px 20px;
+    transition: transform 0.2s;
+
+}
+.sample .card3:hover {
+    transform: translateY(-20px);
+    transform: scale(105%);
+}
+/*subhead*/
+.courses-subhead {
+
+    height: 400px;
+   background-image: url(../pics/11.jpg);
+   color: #fff;
+   padding: 20px 50px;
+   background-size: contain;
+   background-repeat: no-repeat; }
+/*samples*/
+.samples .flex {
+    flex-wrap: wrap;
+}
+.samples {
+
+}
+.samples .flex {
+    flex-wrap: wrap;
+}
+.samples .card3 {
+    margin: 18px 10px 20px;
+    transition: transform 0.2s;
+
+}
+.samples .card3:hover {
+    transform: translateY(-20px);
+    transform: scale(105%);
+}
+/*animations*/
+@keyframes slideinfromleft {
+       0% {
+        transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    
+}
+@keyframes slideinfromright {
+       0% {
+        transform: translateX(100%);
+      }
+        100% {
+            transform: translateX(0);
+        }
+    
+}
+@keyframes slideinfromtop {
+    0% {
+     transform: translateY(-100%);
+   }
+     100% {
+         transform: translateX(0);
+     }
+ 
+}
+@keyframes slideinfrombottom {
+    0% {
+     transform: translateY(100%);
+   }
+     100% {
+         transform: translateX(0);
+     }
+ 
+}
+
